@@ -11,7 +11,7 @@ export default function IconLogo({ className }: IconLogoProps) {
       viewBox="0 0 40 40"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_18_271)">
+      <g clipPath="url(#clip0_18_271)">
         <mask
           id="mask0_18_271"
           style={{

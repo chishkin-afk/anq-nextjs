@@ -1,0 +1,39 @@
+@use '@/app/variables' as *;
+
+.link {
+  position: relative;
+  display: inline-block;
+
+  text-decoration: none;
+  outline: none;
+  font-family: inherit;
+  font-weight: 700;
+
+  color: $color-text;
+  transition: color 0.3s ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: $gray-400;
+
+    transition:
+      height 0.3s,
+      background 0.3s ease;
+  }
+
+  &:hover::after {
+    height: 0.4rem;
+  }
+
+  &:active {
+    &::after {
+      background: $white;
+    }
+    color: $gray-400;
+  }
+}

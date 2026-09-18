@@ -1,0 +1,36 @@
+@use '@/app/variables' as *;
+
+:where(.button) {
+  width: 110px;
+  min-height: 30px;
+
+  border: $border;
+  border-radius: 5px;
+
+  background: none;
+  color: white;
+
+  font-weight: 700;
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+
+  &:not(:disabled) {
+    &:hover {
+      border-color: $color-accent;
+      transform: translateY(-10%);
+      cursor: pointer;
+    }
+  }
+
+  &:focus-visible {
+    outline-offset: 3px;
+    outline: 1px dashed $color-accent;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
