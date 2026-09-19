@@ -1,0 +1,39 @@
+@use '@/app/variables' as *;
+
+.hero {
+  width: 100vw;
+  min-height: 100lvh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-inline: 180px;
+}
+
+.heroText {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.title {
+  color: $green;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.startedButton {
+  width: 200px;
+  height: 60px;
+  font-size: 26px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}

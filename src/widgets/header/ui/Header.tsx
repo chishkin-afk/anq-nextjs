@@ -1,6 +1,6 @@
 import { Button, Logo, NavLink } from '@/shared/ui';
+import { Link } from '../model/types';
 import styles from './Header.module.scss';
-import { Link } from './types';
 
 interface HeaderProps {
   links: Link[];

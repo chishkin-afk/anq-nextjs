@@ -1,6 +1,6 @@
 @use '@/app/variables' as *;
 
-:where(.button) {
+.button {
   width: 110px;
   min-height: 30px;
 
@@ -10,6 +10,7 @@
   background: none;
   color: white;
 
+  font-size: 14px;
   font-weight: 700;
 
   transition:

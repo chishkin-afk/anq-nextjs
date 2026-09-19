@@ -1,0 +1,35 @@
+@use '@/app/variables' as *;
+
+.tag {
+  min-height: 30px;
+
+  border: $border;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  &::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+
+    background: $green;
+
+    border-radius: 50%;
+  }
+}

@@ -1,3 +1,4 @@
+import { Header } from '@/widgets/header';
 import { Manrope } from 'next/font/google';
 import { ReactNode } from 'react';
 import './globals.scss';
@@ -12,10 +13,28 @@ const manrope = Manrope({
   variable: '--font-manrope',
 });
 
+const links = [
+  {
+    title: 'how it works',
+    path: '#guide',
+  },
+  {
+    title: 'about',
+    path: '#about',
+  },
+  {
+    title: 'features',
+    path: '#features',
+  },
+];
+
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={manrope.variable}>
-      <body>{children}</body>
+      <body>
+        <Header links={links} />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

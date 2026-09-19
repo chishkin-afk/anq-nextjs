@@ -17,16 +17,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
   min-height: 100vh;
 }
 
-:where(button, a) {
+:where(a) {
   outline: none;
   border: none;
 }
 
-:where(button, input, textarea, select) {
+:where(input, textarea, select) {
   font: inherit;
 }
